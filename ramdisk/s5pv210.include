@@ -1,0 +1,6 @@
+# include file 
+CROSS_COMPILE_FRINDLY_PATH=$HOME/workspace/s5pv210_project/toolchain/frindly_toolchan/FriendlyARM/toolschain/4.5.1/bin
+export PATH=$PATH:$CROSS_COMPILE_FRINDLY_PATH
+export CROSS_COMPILE_PREFIX=arm-linux-
+export BARE_OS_BIN=$HOME/workspace/s5pv210_project/ramdisk/bare_bin
+
