@@ -1,6 +1,9 @@
 # include file 
-CROSS_COMPILE_FRINDLY_PATH=$HOME/workspace/s5pv210_project/toolchain/frindly_toolchan/FriendlyARM/toolschain/4.5.1/bin
+SDK_PATH_PREFIX=$HOME/workspace
+CROSS_COMPILE_FRINDLY_PATH=$SDK_PATH_PREFIX/s5pv210_project/toolchain/frindly_toolchan/FriendlyARM/toolschain/4.5.1/bin
 export PATH=$PATH:$CROSS_COMPILE_FRINDLY_PATH
 export CROSS_COMPILE_PREFIX=arm-linux-
-export BARE_OS_BIN=$HOME/workspace/s5pv210_project/ramdisk/bare_bin
+export BARE_OS_BIN=$SDK_PATH_PREFIX/s5pv210_project/ramdisk/bare_bin
+export MK_SCRIPT=mk_s5pv210.sh
+export BAREOS_SROUCE_DIR=$SDK_PATH_PREFIX/s5pv210_project/bareOS
 
