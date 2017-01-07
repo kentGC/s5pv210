@@ -1,4 +1,4 @@
-INCLUDE=/home/kent/workspace/s5pv210_project/ramdisk/s5pv210.include
+INCLUDE=/home/kent/workspace/s5pv210/ramdisk/s5pv210.include
 if [ -f "$INCLUDE" ];then
         . $INCLUDE
 else
@@ -19,7 +19,8 @@ usage()
 clean_function()
 {
 	cd $BAREOS_SROUCE_DIR && ./mk_s5pv210.sh clean && cd -
-
+	
+	rm -rf $BARE_OS_BIN
 }
 build_function()
 {

@@ -1,4 +1,4 @@
-INCLUDE=/home/kent/workspace/s5pv210_project/ramdisk/s5pv210.include
+INCLUDE=/home/kent/workspace/s5pv210/ramdisk/s5pv210.include
 if [ -f "$INCLUDE" ];then
 	. $INCLUDE
 else
