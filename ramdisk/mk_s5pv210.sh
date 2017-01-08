@@ -24,7 +24,7 @@ clean_function()
 }
 build_function()
 {
-	mkdir $BARE_OS_BIN
+	[ ! -d $BARE_OS_BIN ] && mkdir $BARE_OS_BIN
 	cd $BAREOS_SROUCE_DIR && ./mk_s5pv210.sh && cd -
 
 }

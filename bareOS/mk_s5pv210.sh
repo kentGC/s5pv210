@@ -8,5 +8,5 @@ fi
 
 for i in `ls`
 do
-	[ -d "$i" ]&& echo "compile $i"&&cd $i && ./mk_s5pv210.sh $1 && echo "compile $i end" &&cd -
+	[ -d "$i" ]&& echo "##############################compile $ii start##################"&&cd $i && ./mk_s5pv210.sh $1 && echo "##############################compile $i end################" &&cd -
 done
