@@ -1,9 +1,9 @@
-led_wtd.bin: start.o delay.o
-	$(CROSS_COMPILE)ld -Ttext 0x0 -o led_wtd.elf $^
-	$(CROSS_COMPILE)objcopy -O binary led_wtd.elf led_wtd.bin
-	$(CROSS_COMPILE)objdump -D led_wtd.elf > led_wtd_elf.dis
+led.bin: start.o led.o
+	$(CROSS_COMPILE)ld -Ttext 0x0 -o led.elf $^
+	$(CROSS_COMPILE)objcopy -O binary led.elf led.bin
+	$(CROSS_COMPILE)objdump -D led.elf > led.dis
 	gcc mkv210_image.c -o mkmini210
-	./mkmini210 led_wtd.bin 210.bin
+	./mkmini210 led.bin 210.bin
 
 %.o : %.S
 	$(CROSS_COMPILE)gcc -o $@ $< -c
