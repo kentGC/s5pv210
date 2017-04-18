@@ -1,4 +1,7 @@
-typedef unsigned int (*copy_sd_mmc_to_mem) (unsigned int  channel, unsigned int  start_block, unsigned char block_size, unsigned int  *trg, unsigned int  init);
+typedef unsigned int (*copy_sd_mmc_to_mem) \ 
+		(unsigned int  channel, unsigned int  start_block, \ 
+			unsigned char block_size, unsigned int  *trg, \
+				unsigned int  init);
 
 
 void copy_code_to_dram(void)
