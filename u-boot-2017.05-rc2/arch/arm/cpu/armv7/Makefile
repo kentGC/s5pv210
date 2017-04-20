@@ -25,7 +25,7 @@ obj-$(CONFIG_IPROC) += iproc-common/
 obj-$(CONFIG_KONA) += kona-common/
 obj-$(CONFIG_SYS_ARCH_TIMER) += arch_timer.o
 
-ifneq (,$(filter s5pc210 s5pc1xx exynos,$(SOC)))
+ifneq (,$(filter s5pc1xx exynos,$(SOC)))
 obj-y += s5p-common/
 endif
 

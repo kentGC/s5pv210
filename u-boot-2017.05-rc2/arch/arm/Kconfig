@@ -589,14 +589,6 @@ config ARCH_S5PC1XX
 	select DM_GPIO
 	select DM_I2C
 
-config ARCH_S5PC210
-	bool "Samsung S5PC210"
-	select CPU_V7
-	select DM
-	select DM_SERIAL
-	select DM_GPIO
-	select DM_I2C
-
 config ARCH_HIGHBANK
 	bool "Calxeda Highbank"
 	select CPU_V7
@@ -1225,8 +1217,6 @@ source "arch/arm/mach-meson/Kconfig"
 source "arch/arm/mach-rockchip/Kconfig"
 
 source "arch/arm/mach-s5pc1xx/Kconfig"
-
-source "arch/arm/mach-s5pc210/Kconfig"
 
 source "arch/arm/mach-snapdragon/Kconfig"
 

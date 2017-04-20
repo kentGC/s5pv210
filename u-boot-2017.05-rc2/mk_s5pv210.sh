@@ -5,12 +5,13 @@ else
 	echo "$INCLUDE : no such file or directory"
 	exit
 fi
+TARGET_BIN="210.bin led.bin"
 [ "$1" = "clean" ] && make clean && exit
+make clean
+make CROSS_COMPILE=$CROSS_COMPILE_PREFIX 
 
-make CROSS_COMPILE=$CROSS_COMPILE_PREFIX  arch=arm
-
-[ -d "$BARE_OS_BIN" ] && echo "install complete" && cp $TARGET_BIN $BARE_OS_BIN && exit
-echo "$BARE_OS_BIN : no such file or directory"
+#[ -d "$BARE_OS_BIN" ] && echo "install complete" && cp $TARGET_BIN $BARE_OS_BIN && exit
+#echo "$BARE_OS_BIN : no such file or directory"
 
 
 
