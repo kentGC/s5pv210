@@ -1,8 +1,0 @@
-menu "WATCHDOG support"
-
-config ULP_WATCHDOG
-	bool "i.MX7ULP watchdog"
-	help
-	  Say Y here to enable i.MX7ULP watchdog driver.
-
-endmenu
